@@ -1,5 +1,8 @@
+import functions
 import tweepy
 import dotenv
+import time
+
 
 config = dotenv.dotenv_values(".env")
 
@@ -16,6 +19,9 @@ client = tweepy.Client(
     access_token_secret=access_token_secret
 )
 
-client.create_tweet(text='teste')
+# functions.reply_to_quote(client)
+while True:
+    time.sleep(3600)
+
 
 
