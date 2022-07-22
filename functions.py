@@ -6,3 +6,4 @@ def reply_to_quote(client: tweepy.Client):
     newest_tweet_id = mentions.meta['newest_id']
     client.create_tweet(in_reply_to_tweet_id=newest_tweet_id, text='teste')
     
+    
